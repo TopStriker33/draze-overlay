@@ -3,25 +3,24 @@
 html,body{width:1280px;height:720px;overflow:hidden;background:transparent;}
 #stage{position:fixed;inset:0;}
 
-/* ---- ONLYFANS BADGE (bottom-left, primary) ---- */
-#of{position:absolute;left:24px;bottom:86px;display:inline-flex;align-items:center;gap:13px;padding:12px 24px 12px 16px;border-radius:18px;white-space:nowrap;background:#fff;box-shadow:0 7px 24px rgba(0,150,214,.55);animation:float 2.8s ease-in-out infinite;}
+/* ---- ONLYFANS BADGE (bottom-RIGHT) ---- */
+#of{position:absolute;right:24px;bottom:24px;display:inline-flex;align-items:center;gap:13px;padding:12px 24px 12px 16px;border-radius:18px;white-space:nowrap;background:#fff;box-shadow:0 7px 24px rgba(0,150,214,.55);animation:float 2.8s ease-in-out infinite;}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 #of::after{content:"";position:absolute;inset:-3px;border-radius:20px;border:3px solid #00AFF0;opacity:0;animation:ring 2.8s ease-out infinite;}
 @keyframes ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.16);opacity:0}}
 #of .mark{width:58px;height:34px;flex:none;}
 #of .tx{display:flex;flex-direction:column;line-height:1.08;}
 #of .brand{font-size:14px;font-weight:800;letter-spacing:-.2px;}
-#of .brand .o{color:#0a1f2e;}
-#of .brand .f{color:#00AFF0;}
+#of .brand .o{color:#0a1f2e;}#of .brand .f{color:#00AFF0;}
 #of .user{font-size:20px;font-weight:900;color:#0a1f2e;letter-spacing:-.3px;}
 #of .free{margin-left:8px;background:#00AFF0;color:#fff;font-weight:900;font-size:12px;padding:4px 11px;border-radius:999px;box-shadow:0 0 10px rgba(0,175,240,.7);}
 
-/* ---- TELEGRAM PILL (bottom-left, under OF) ---- */
-#tg{position:absolute;left:24px;bottom:24px;display:inline-flex;align-items:center;gap:10px;padding:9px 18px 9px 11px;border-radius:14px;white-space:nowrap;background:#fff;box-shadow:0 5px 16px rgba(41,169,235,.45);}
-#tg svg{width:30px;height:30px;flex:none;}
-#tg .tx{display:flex;flex-direction:column;line-height:1.05;}
-#tg .brand{font-size:11px;font-weight:800;color:#29a9eb;letter-spacing:.2px;}
-#tg .user{font-size:15px;font-weight:900;color:#0a1f2e;letter-spacing:-.2px;}
+/* ---- TELEGRAM PILL (bottom-LEFT) ---- */
+#tg{position:absolute;left:24px;bottom:24px;display:inline-flex;align-items:center;gap:11px;padding:11px 20px 11px 13px;border-radius:16px;white-space:nowrap;background:#fff;box-shadow:0 6px 18px rgba(41,169,235,.5);}
+#tg svg{width:36px;height:36px;flex:none;}
+#tg .tx{display:flex;flex-direction:column;line-height:1.08;}
+#tg .brand{font-size:13px;font-weight:800;color:#29a9eb;letter-spacing:.2px;}
+#tg .user{font-size:18px;font-weight:900;color:#0a1f2e;letter-spacing:-.3px;}
 </style></head><body>
 <div id="stage">
   <div id="of">
