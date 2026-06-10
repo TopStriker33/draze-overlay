@@ -3,29 +3,11 @@
 html,body{width:1280px;height:720px;overflow:hidden;background:transparent;}
 #stage{position:fixed;inset:0;}
 
-/* ---- GFE PLAY MENU (top-left) — no toy, relational actions ---- */
-#lp{position:absolute;top:20px;left:20px;width:288px;background:linear-gradient(165deg,#04243a 0%,#020a12 100%);border:2px solid #00AFF0;border-radius:15px;box-shadow:0 0 26px rgba(0,175,240,.85);padding:12px 15px 13px;}
-#lp h1{margin:0;text-align:center;font-size:20px;letter-spacing:2px;color:#4fd2ff;text-shadow:0 0 11px #00AFF0;font-weight:900;display:flex;align-items:center;justify-content:center;gap:7px;}
-#lp h1 .hrt{font-size:16px;color:#00AFF0;animation:beat 1s infinite;}
-@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
-.sub{text-align:center;font-size:10px;letter-spacing:3px;color:#9fe3ff;margin:3px 0 9px;font-weight:bold;}
-.row{display:flex;align-items:center;gap:10px;padding:5px 2px;border-bottom:1px solid rgba(0,175,240,.13);}
-.row:last-child{border-bottom:none;}
-.tk{color:#4fd2ff;font-size:15px;font-weight:bold;width:44px;text-align:right;flex:none;}
-.act{color:#dff4ff;font-size:14px;font-weight:bold;}
-.foot{text-align:center;margin-top:9px;font-size:11px;color:#9fe3ff;letter-spacing:.3px;font-weight:bold;}
-.foot b{color:#4fd2ff;}
-
-/* ---- PINK LINK CTA (top-right) ---- */
-#cta{position:absolute;top:26px;right:30px;text-align:right;color:#fff;font-weight:900;font-size:25px;line-height:1.18;text-shadow:0 2px 7px rgba(0,0,0,.7);letter-spacing:.5px;}
-#cta .pink{color:#ff2d95;text-shadow:0 0 12px rgba(255,45,149,.85);animation:glow 1.4s infinite;}
-@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(255,45,149,.6)}50%{text-shadow:0 0 18px rgba(255,45,149,1)}}
-
-/* ---- ONLYFANS BADGE (bottom-left) ---- */
-#of{position:absolute;left:24px;bottom:24px;display:inline-flex;align-items:center;gap:13px;padding:12px 24px 12px 16px;border-radius:18px;white-space:nowrap;background:#fff;box-shadow:0 7px 24px rgba(0,150,214,.55);animation:float 2.6s ease-in-out infinite;}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-#of::after{content:"";position:absolute;inset:-3px;border-radius:20px;border:3px solid #00AFF0;opacity:0;animation:ring 2.6s ease-out infinite;}
-@keyframes ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.18);opacity:0}}
+/* ---- ONLYFANS BADGE (bottom-left, primary) ---- */
+#of{position:absolute;left:24px;bottom:86px;display:inline-flex;align-items:center;gap:13px;padding:12px 24px 12px 16px;border-radius:18px;white-space:nowrap;background:#fff;box-shadow:0 7px 24px rgba(0,150,214,.55);animation:float 2.8s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+#of::after{content:"";position:absolute;inset:-3px;border-radius:20px;border:3px solid #00AFF0;opacity:0;animation:ring 2.8s ease-out infinite;}
+@keyframes ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.16);opacity:0}}
 #of .mark{width:58px;height:34px;flex:none;}
 #of .tx{display:flex;flex-direction:column;line-height:1.08;}
 #of .brand{font-size:14px;font-weight:800;letter-spacing:-.2px;}
@@ -33,22 +15,15 @@ html,body{width:1280px;height:720px;overflow:hidden;background:transparent;}
 #of .brand .f{color:#00AFF0;}
 #of .user{font-size:20px;font-weight:900;color:#0a1f2e;letter-spacing:-.3px;}
 #of .free{margin-left:8px;background:#00AFF0;color:#fff;font-weight:900;font-size:12px;padding:4px 11px;border-radius:999px;box-shadow:0 0 10px rgba(0,175,240,.7);}
+
+/* ---- TELEGRAM PILL (bottom-left, under OF) ---- */
+#tg{position:absolute;left:24px;bottom:24px;display:inline-flex;align-items:center;gap:10px;padding:9px 18px 9px 11px;border-radius:14px;white-space:nowrap;background:#fff;box-shadow:0 5px 16px rgba(41,169,235,.45);}
+#tg svg{width:30px;height:30px;flex:none;}
+#tg .tx{display:flex;flex-direction:column;line-height:1.05;}
+#tg .brand{font-size:11px;font-weight:800;color:#29a9eb;letter-spacing:.2px;}
+#tg .user{font-size:15px;font-weight:900;color:#0a1f2e;letter-spacing:-.2px;}
 </style></head><body>
 <div id="stage">
-  <div id="lp">
-    <h1><span class="hrt">&#9829;</span>PLAY WITH ME</h1>
-    <div class="sub">TIP &amp; LET'S HAVE FUN &#128521;</div>
-    <div class="row"><span class="tk">4</span><span class="act">make me smile &#128522;</span></div>
-    <div class="row"><span class="tk">10</span><span class="act">say hi to YOU &#129392;</span></div>
-    <div class="row"><span class="tk">33</span><span class="act">spin the wheel &#127921;</span></div>
-    <div class="row"><span class="tk">44</span><span class="act">pick my song &#127925;</span></div>
-    <div class="row"><span class="tk">99</span><span class="act">truth or dare &#128521;</span></div>
-    <div class="row"><span class="tk">150</span><span class="act">outfit YOU choose &#128087;</span></div>
-    <div class="row"><span class="tk">300</span><span class="act">story time with me &#128214;</span></div>
-    <div class="row"><span class="tk">1111</span><span class="act">buy me flowers &#127800; &#128081;</span></div>
-    <div class="foot">the real us is on &#128153; <b>onlyfans.com/alicerosex</b></div>
-  </div>
-  <div id="cta">USE <span class="pink">PINK LINK</span><br>IN CHAT<br>FOR FREE SUB</div>
   <div id="of">
     <svg class="mark" viewBox="0 0 72 40" xmlns="http://www.w3.org/2000/svg">
       <circle cx="20" cy="20" r="14.5" fill="none" stroke="#00AFF0" stroke-width="8"/>
@@ -57,6 +32,13 @@ html,body{width:1280px;height:720px;overflow:hidden;background:transparent;}
     </svg>
     <span class="tx"><span class="brand"><span class="o">Only</span><span class="f">Fans</span></span><span class="user">@alicerosex</span></span>
     <span class="free">FREE</span>
+  </div>
+  <div id="tg">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="12" fill="#29a9eb"/>
+      <path d="M5.4 11.7l11.3-4.4c.5-.2 1 .1.8.9l-1.9 9.1c-.1.6-.5.7-1 .4l-2.8-2.1-1.4 1.3c-.2.2-.3.3-.6.3l.2-3 5.2-4.7c.2-.2 0-.3-.3-.1L8.3 13 5.6 12.2c-.6-.2-.6-.6.1-.9z" fill="#fff"/>
+    </svg>
+    <span class="tx"><span class="brand">Telegram</span><span class="user">@alicerosex</span></span>
   </div>
 </div>
 </body></html>
